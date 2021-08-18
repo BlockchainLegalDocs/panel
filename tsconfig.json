@@ -14,10 +14,16 @@
     ],
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["src/views/*"],
+      "@api/*": ["src/api/*"],
+      "@stylesheets/*": ["src/stylesheets/*"],
+      "@shared/*": ["src/shared/*"],
+    }
   },
   "include": [
-    ".eslintrc.js",
     "**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
