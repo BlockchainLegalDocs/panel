@@ -1,3 +1,7 @@
 <template>
-  <div>Hey</div>
+  <div>{{ a }}</div>
 </template>
+
+<script setup lang="ts">
+  const a = 'salam';
+</script>

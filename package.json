@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "fix": "eslint . --fix --ext .ts,.js,.vue"
   },
   "dependencies": {
     "ant-design-vue": "^2.2.6",

@@ -1,13 +1,13 @@
-import { RouterOptions } from "vue-router";
+import { RouterOptions } from 'vue-router';
 
-const routes: RouterOptions["routes"] = [
+const routes: RouterOptions['routes'] = [
   {
-    path: "/auth/login",
-    component: () => import("@@/auth/Login.vue"),
+    path: '/auth/login',
+    component: () => import('@@/auth/Login.vue'),
   },
   {
-    path: "/.*",
-    redirect: "/auth/login",
+    path: '/:catchAll(.*)*',
+    redirect: '/auth/login',
   },
 ];
 
