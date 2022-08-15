@@ -1,8 +1,8 @@
+import AddDocumentContent from '@@/AddDocument'
+
 function AddDocument () {
   return (
-    <div>
-      This is add document page
-    </div>
+    <AddDocumentContent />
   )
 }
 
