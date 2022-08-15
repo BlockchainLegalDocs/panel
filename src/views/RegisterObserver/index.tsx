@@ -1,8 +1,8 @@
+import RegisterAsObserver from '@@/RegisterAsObserver'
+
 function RegisterObserver () {
   return (
-    <div>
-      This is register observer page
-    </div>
+    <RegisterAsObserver />
   )
 }
 
