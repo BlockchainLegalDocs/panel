@@ -3,7 +3,7 @@ import { ReactChild } from '@/shared/types'
 import { UserOutlined } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
 import { Layout as AntLayout, Menu } from 'antd'
-import { Link, useMatch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import styles from './style.module.scss'
 
