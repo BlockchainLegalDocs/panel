@@ -10,11 +10,19 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@metamask/detect-provider": "^1.2.0",
     "antd": "^4.22.5",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "sass": "^1.54.4"
+    "sass": "^1.54.4",
+    "stream": "^0.0.2",
+    "util": "^0.12.4",
+    "web3": "^1.7.5",
+    "web3-core": "^1.7.5"
   },
   "devDependencies": {
     "@types/node": "^18.7.3",
@@ -22,12 +30,15 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@vitejs/plugin-react": "^2.0.1",
+    "browserify-zlib": "^0.2.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
+    "rollup-plugin-polyfill-node": "^0.10.2",
+    "stream-browserify": "^3.0.0",
     "typescript": "*",
     "vite": "^3.0.7"
   }

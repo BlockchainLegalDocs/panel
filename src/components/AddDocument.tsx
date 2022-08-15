@@ -1,9 +1,30 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
+import { ethDocuments } from '@/shared/services/ethereum/api'
+import useEthereum from '@/shared/services/ethereum/useEthereum'
 import { required } from '@/shared/utils/validations'
 import { Button, DatePicker, Form, Input } from 'antd'
 
 function AddDocument () {
-  const onFinish = (values: any) => {
+  const { isConnected, connect, currentAccount } = useEthereum()
+  const onFinish = async (values: any) => {
     console.log('Success:', values)
+    if (!isConnected) await connect()
+    console.log({
+      docLink: values.docLink,
+      hash: values.docHash,
+      value: 0.000005,
+      time: 100
+    })
+    ethDocuments.addDoc({
+      docLink: values.docLink,
+      hash: values.docHash,
+      value: BigInt('5000000000000000'),
+      time: 100,
+      address: currentAccount as string,
+      price: 5000000000000000
+    }).then(() => {
+      alert('DONE')
+    })
   }
 
   const onFinishFailed = (errorInfo: any) => {
