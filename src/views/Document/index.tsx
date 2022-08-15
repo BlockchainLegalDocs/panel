@@ -1,8 +1,8 @@
+import DocumentContent from '@@/Document'
+
 function Document () {
   return (
-    <div>
-      This is document page
-    </div>
+    <DocumentContent />
   )
 }
 
