@@ -1,8 +1,11 @@
+import { BrowserRouter } from 'react-router-dom'
+import Router from './views/Router'
+
 function App () {
   return (
-    <div className="App">
-      hallow
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
 
