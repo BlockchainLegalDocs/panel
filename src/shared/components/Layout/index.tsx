@@ -1,4 +1,4 @@
-import { ADD_DOCUMENT, REGISTER_OBSERVER } from '@/routes'
+import { ADD_DOCUMENT, GO_TO_DOCUMENT, REGISTER_OBSERVER } from '@/routes'
 import { ReactChild } from '@/shared/types'
 import { UserOutlined } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
@@ -23,6 +23,11 @@ const items: MenuProps['items'] = [
     key: '2',
     icon: <UserOutlined />,
     label: (<Link to={REGISTER_OBSERVER}>Register Observer</Link>)
+  },
+  {
+    key: '3',
+    icon: <UserOutlined />,
+    label: (<Link to={GO_TO_DOCUMENT}>Go To Document</Link>)
   }
 ]
 
